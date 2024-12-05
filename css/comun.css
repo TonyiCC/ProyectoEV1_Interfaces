@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --clr-main: #45880e;
+    --clr-main-light: #73ff00;
+    --clr-white: #fff7e5;
+    --clr-gray: #e2e2e2;
+    --clr-green: #316b0a; 
+    --clr-red: #961818;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.texto-footer {
+    color: var(--clr-main-light);
+    font-size: .85rem;
+}
+
+/* LOGIN */
+
+body {
+    background-color: var(--clr-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--clr-white); 
+    padding: 20px; 
+    border-radius: 8px; 
+    width: 40%;
+    margin: auto; 
+    position: relative; 
+}
+
+.container h2 {
+    text-align: center;
+    color: var(--clr-green);
+    margin-bottom: 10px;
+}
+
+input[type="text"],input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#botones{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="submit"],input[type="button"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#submit{
+    background-color: var(--clr-main-light);
+}
+#limpiar{
+    background-color: var(--clr-green);
+}
