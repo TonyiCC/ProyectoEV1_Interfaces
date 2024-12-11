@@ -52,7 +52,7 @@ body {
     background-color: var(--clr-white); 
     padding: 20px; 
     border-radius: 8px; 
-    width: 40%;
+    width: 30%;
     margin: auto; 
     position: relative; 
 }
@@ -90,4 +90,21 @@ input[type="submit"],input[type="button"]{
 }
 #limpiar{
     background-color: var(--clr-green);
+}
+
+#submit:hover, #limpiar:hover{
+    background-color: red;
+}
+#submit:active, #limpiar:active {
+    background-color: white;
+    color: black;
+}
+
+#error-password{
+    color: red;
+    padding: 10px;
+}
+#error-nombre{
+    color: red;
+    padding: 10px;
 }
