@@ -1,0 +1,96 @@
+
+.header-mobile .logo {
+    display: none;
+}
+
+#open-menu {
+    display: none; 
+}
+
+#close-menu {
+    display: none; 
+}
+
+body {
+    background-color: var(--clr-green, #316b0a); 
+}
+
+main {
+
+    background-color: var(--clr-white, #fff7e5); 
+    margin: 10px auto; 
+    max-width: 90%; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+main {
+    margin-right: 26%; 
+    margin-left: 1%;
+}
+
+aside.aside-visible {
+
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    width: 25%; 
+    height: 100vh; 
+}
+
+aside.aside-visible header {
+    color: var(--clr-white);
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start; 
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+aside.aside-visible nav {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column; 
+    width: 90%; 
+    height: 100%; 
+    margin-top: 20%; 
+}
+
+.boton-menu {
+    background-color: transparent; 
+    border: none; 
+    padding:20px 40px; 
+    color: var(--clr-white);
+    width: 100%; 
+    text-align: left; 
+}
+
+.boton-menu:hover{
+    border-radius: 8px;
+    background-color: var(--clr-white); 
+    color: var(--clr-green); 
+}
+
+aside nav ul li {
+    margin-bottom: 10%; 
+}
+
+aside nav ul{
+    margin-top: 200px;
+}
+
+#titulo-principal {
+    position: relative; 
+    margin-top: 20px; 
+    margin-left: 20px;  
+    color: var(--clr-green); 
+}
+
+footer {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    text-align: left;
+    padding: 10px; 
+}
