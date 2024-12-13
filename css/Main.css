@@ -1,4 +1,11 @@
-
+/*    
+    --clr-main: #45880e;
+    --clr-main-light: #73ff00;
+    --clr-white: #fff7e5;
+    --clr-gray: #e2e2e2;
+    --clr-green: #316b0a; 
+    --clr-red: #961818;
+*/
 .header-mobile .logo {
     display: none;
 }
@@ -82,8 +89,7 @@ aside nav ul{
 
 #titulo-principal {
     position: relative; 
-    margin-top: 20px; 
-    margin-left: 20px;  
+    padding: 20px; 
     color: var(--clr-green); 
 }
 
@@ -94,4 +100,35 @@ footer {
     width: 100%; 
     text-align: left;
     padding: 10px; 
+}
+
+/* Productos */
+
+.producto{
+    margin-bottom: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    /*border: solid black 1px;*/
+}
+
+.producto img{
+    border-radius: 20px 20px 0 0;
+}
+.producto-detalles{
+    /*border: solid black 1px;*/
+    border-radius: 0px 0px 20px 20px;
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+    padding: 20px;
+
+}
+.producto-agregar{
+    background-color: var(--clr-white);
+    border: none;
+    border-radius: 100px;
+    padding: 20px;
+    display: block; 
+    margin: 0 auto;
+    width: 100%;
 }
