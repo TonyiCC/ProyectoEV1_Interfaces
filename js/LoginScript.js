@@ -56,7 +56,7 @@ formulario.addEventListener('submit', function (e) {
     const passwordEsValida = validarPassword();
 
     if (nombreEsValido && passwordEsValida) {
-        window.location.href = 'main.html';
+        window.location.href = '../main.html';
     }
 });
 

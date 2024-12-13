@@ -1,10 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Usamos fetch para obtener el archivo JSON de los productos
     fetch('./productos.json')
-        .then(response => response.json()) // Convertimos la respuesta en formato JSON
+        .then(response => {
+            
+            if (!response.ok) {
+                throw new Error('Error al cargar el archivo JSON: ' + response.statusText);
+            }
+            return response.json(); 
+        })
         .then(productosJSON => {
             // Seleccionamos el contenedor de los productos
             const contenedorProductos = document.getElementById('contenedor-productos');
+
+            // Verificamos si el contenedor existe
+            if (!contenedorProductos) {
+                console.error('El contenedor de productos no existe en el DOM');
+                return;
+            }
 
             // Recorrer el array de productos y crear el HTML para cada uno
             productosJSON.forEach(producto => {
